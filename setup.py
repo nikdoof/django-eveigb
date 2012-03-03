@@ -9,7 +9,7 @@ setup(name = "django-eveigb",
     description = "Django library/application for making use of EVE's In-Game Browser",
     author = "Andrew Williams",
     author_email = "matalok@pleaseignore.com",
-    url = "",
+    url = "https://github.com/nikdoof/django-eveigb",
     keywords = "eveonline django igb",
     packages = ['eveigb',],
 )

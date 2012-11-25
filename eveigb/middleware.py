@@ -22,6 +22,12 @@ class IGBMiddleware(object):
             ('HTTP_EVE_STATIONNAME', 'eve_stationname'),
             ('HTTP_EVE_STATIONID', 'eve_stationid'),
             ('HTTP_EVE_CORPROLE', 'eve_corprole'),
+            ('HTTP_EVE_SHIPNAME', 'eve_shipname'),
+            ('HTTP_EVE_SHIPTYPEID', 'eve_shiptypeid'),
+            ('HTTP_EVE_SHIPTYPENAME', 'eve_shiptypename'),
+            ('HTTP_EVE_SHIPID', 'eve_shipid'),
+            ('HTTP_EVE_SOLARSYSTEMID', 'eve_systemid'),
+            ('HTTP_EVE_WARFACTIONID', 'eve_warfactionid'),
         ]
 
         if 'EVE-IGB' in request.META.get('HTTP_USER_AGENT', ''):

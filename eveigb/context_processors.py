@@ -1,6 +1,6 @@
 def igb(request):
-    return {
+    ctx = {
         'is_igb': request.is_igb,
         'is_igb_trusted': request.is_igb_trusted,
     }
-
+    return ctx

@@ -3,7 +3,7 @@ Django-EVEIGB
 
 This library/application allows you to make use of EVE's in-game browser and most of the features available within it.
 
-[![wercker status](https://app.wercker.com/status/16ffeb1803105ce6f5c5209d67104211/m "wercker status")](https://app.wercker.com/project/bykey/16ffeb1803105ce6f5c5209d67104211)
+[![Build Status](https://travis-ci.org/nikdoof/django-eveigb.png?branch=master)](https://travis-ci.org/nikdoof/django-eveigb)
 
 Installation
 ------------

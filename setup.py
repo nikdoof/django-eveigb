@@ -13,4 +13,5 @@ setup(name="django-eveigb",
       keywords="eveonline django igb",
       packages=['eveigb'],
       install_requires=['Django>=1.4'],
+      test_suite='test_project.tests.runtests',
 )

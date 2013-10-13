@@ -53,4 +53,3 @@ class IGBMiddleware(object):
                 for header, req, typ in EVE_IGB_HEADERS:
                     if header in request.META:
                         setattr(request, header.replace('HTTP_', '').lower(), request.META.get(header))
-

@@ -39,7 +39,7 @@ class IGBMiddleware(object):
                 for hdr, req, typ in EVE_IGB_HEADERS:
                     if not req:
                         continue
-                    if not hdr in request.META:
+                    if hdr not in request.META:
                         return
                     if typ == 'int':
                         try:

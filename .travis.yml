@@ -8,7 +8,7 @@ env:
   - DJANGO=1.6.5
   - DJANGO=https://www.djangoproject.com/download/1.7c2/tarball/
 install:
-  - pip install -q Django==$DJANGO --use-mirrors
+  - pip install -q $DJANGO --use-mirrors
   - pip install -q . --use-mirrors
   - pip install -q mock --use-mirrors
   - pip install -q pep8 --use-mirrors

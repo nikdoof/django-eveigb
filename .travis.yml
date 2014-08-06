@@ -6,7 +6,7 @@ env:
   - DJANGO="django==1.4.13"
   - DJANGO="django==1.5.8"
   - DJANGO="django==1.6.5"
-  - DJANGO=https://www.djangoproject.com/download/1.7c2/tarball/
+  - DJANGO="https://www.djangoproject.com/download/1.7c2/tarball/"
 install:
   - pip install -q $DJANGO --use-mirrors
   - pip install -q . --use-mirrors
@@ -16,3 +16,8 @@ before_script:
   - "pep8 --exclude=migrations --ignore=E501,E225 eveigb"
 script:
   - python setup.py test
+
+matrix:
+  exclude:
+    - python: "2.6"
+      env: DJANGO="https://www.djangoproject.com/download/1.7c2/tarball/"
